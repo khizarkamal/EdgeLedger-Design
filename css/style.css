@@ -8,6 +8,10 @@
     margin: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 ul{
     list-style: none;
 
@@ -121,7 +125,8 @@ bg-light{
 /* WHAT WE DO  */
 
 #what{
-    margin-top: 1rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
 }
 
 .what__heading{
@@ -159,6 +164,8 @@ bg-light{
 /* WHO WE ARE */
 
 #who__we__are{
+    margin-top: 1rem;
+    padding-top: 1rem;
     display: flex;
 }
 
@@ -217,4 +224,83 @@ bg-light{
     width:40%;
     display: block;
     margin: auto;
+}
+
+
+/* CONTACT SECTION */
+
+
+#contact{
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: row;
+}
+
+#contact > div:first-child{
+    flex:1;
+    padding: 2rem;
+    background-color: #7ab436;
+    color: white;
+}
+
+#contact > div:last-child{
+    flex: 1;
+}
+
+.form-control label{
+    display: block;
+    font-weight: bold;
+
+}
+
+.form-control input{
+    width: 100%;
+    height: 2rem;
+    border: none;
+    padding: .5rem;
+    margin-bottom: .5rem;
+}
+.form-control input:focus{
+    outline: 2px solid white;
+}
+
+
+
+.form-control textarea{
+    height: 4rem;
+    width: 100%;
+    border: none;
+    padding: .5rem;
+    margin-bottom: .5rem;
+
+}
+
+.form-control textarea:focus{
+    outline: 2px solid white;
+}
+
+.form-btn{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    background-color: #333;
+    color:#7ab436;
+    border: none;
+    font-weight: bold;
+}
+
+
+
+#footer{
+    display: flex;
+    background-color: #333;
+    color: white;
+    min-height: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer p{
+    margin: 0;
 }
